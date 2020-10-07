@@ -1,0 +1,14 @@
+.content-error {
+  font-size: 30px;
+  border-bottom: 1px solid rgba(185, 185, 185, 0.9);
+}
+
+.err-head {
+  font-size: 45px;
+}
+
+@media (max-width: 880px) {
+  .content-error {
+    font-size: 20px;
+  }
+}
