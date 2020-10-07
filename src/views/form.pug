@@ -1,0 +1,20 @@
+extends ./main/page
+
+block content
+    section.content-box 
+        form.form(action='/form', method='POST')
+            div(class=["item in-name"])
+                label(for="username") Username
+                input(type='text' name='username' maxlength=15)
+            div(class=["item in-pass"])
+                label(for="password") Password
+                input(type='password' name='password' maxlength=20)
+            div(class=["item select"])
+                label(for="gender") Gender
+                select(name="gender")
+                    option(value="male") Male
+                    option(value="female") Female
+            div(class=["item check"])
+                input(type="checkbox" name="agree" value="true")
+                label(for="agree") Agree With
+            input.submit-btn(type='submit' value='Submit')
